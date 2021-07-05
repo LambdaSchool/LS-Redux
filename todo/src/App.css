@@ -1,0 +1,78 @@
+.App {
+  width: 400px;
+  margin: 20px auto;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 6px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, .25);
+}
+
+.todo-form {
+  margin-bottom: 20px;
+}
+
+.todo-container {
+  width: 100%;
+}
+
+.todo-tabs {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-tabs h2 {
+  width: 30%;
+  height: 32px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  background-color: rgb(213, 236, 243);
+  transition: box-shadow .2s, background-color .2s;
+}
+
+.todo-tabs h2:nth-of-type(-n+2) {
+  border-right: 1px solid #000;
+}
+
+.todo-list {
+  width: 100%;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding: 5px;
+  transition: box-shadow .3s, background-color .3s;
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: rgb(213, 236, 243);
+}
+
+.completed {
+  background-color: rgba(201, 200, 200, .4);
+}
+
+.completed div:not(.cross) {
+  text-decoration: line-through;
+  opacity: .4;
+}
+
+.todo-tabs .selected {
+  background-color: rgb(94, 155, 173);
+  box-shadow: inset 3px 3px 5px rgb(0, 0, 0, .25);
+}
