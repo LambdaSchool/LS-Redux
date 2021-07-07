@@ -1,0 +1,23 @@
+.incomplete {
+	display: flex;
+	align-items: center;
+  cursor: pointer;
+  margin: 0 0 10px 30px;
+  text-decoration: none;
+}
+
+.completed {
+	display: flex;
+	align-items: center;
+  cursor: pointer;
+  margin: 0 0 10px 30px;
+  text-decoration: line-through;
+}
+
+.text {
+  font-size: 1.8rem;
+}
+
+.trash {
+	margin-left: 10px;
+}
