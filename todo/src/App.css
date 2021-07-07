@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.deleteButton{
+  color: red;
+  margin-left: 10px;
+  border: none;
+  background: none;
+}
+.deleteButton :hover {
+  font-style:italic;
+  font-weight:bold;
+}
+
+li {
+  padding:10px;
+}
